@@ -1,0 +1,185 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 10px;
+    
+  }
+  
+  #om-mig {
+    grid-column: 1;
+    margin-top: 30px;
+    margin-left: 80px;
+    animation: fly-in-left 1s ease-out forwards;
+  }
+  
+
+  
+  #billede img {
+    
+    animation: fly-in-bottom 1s ease-out forwards;
+    grid-column: 2;
+    width: 90%; 
+    height: auto; 
+    margin-top: 10px;
+    padding-left: 20px;
+ 
+  }
+  #dulle {
+    animation: fly-in-bottom 1s ease-out forwards;
+    grid-column: 3;
+    position: absolute;
+    bottom: 30px;
+    right: 600px;
+ 
+  }
+  
+ .ul-container h2{
+  font-weight: bold;
+  
+ }
+  
+  #cv {
+    grid-column: 1;
+    margin-top: 30px;
+    animation: fly-in-left 1s ease-out forwards;
+    display:none;
+     
+  }
+  li {
+    padding: 10px;
+  }
+  
+  
+  #myButton2 {
+    position: absolute;
+    right: 0%;
+    transform: translateX(-50%);
+    animation: flydIndKnap 1s ease forwards;
+    background-color:#004800da;
+    color: #deded8; 
+    font-family:'Montserrat', sans-serif;
+    font-size: 18px; 
+    padding: 10px 20px; 
+    border: none; 
+    width: 250px;
+    height: 40px;
+    top: 90%;
+}
+#myButton2:hover {
+   
+    background-color: #074707; 
+    color: #000000;
+    visibility: hidden;
+
+}
+
+
+
+
+  #myButton2:hover::before {
+    content: "KLIK HER "; 
+    visibility: visible;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #024702; 
+    
+  }
+
+  
+  
+  
+ 
+  
+  @keyframes fly-in-bottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fly-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    
+    .billede {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      width: auto;
+      max-height: 40%;
+    }
+  
+   
+    
+  
+    .tekst {
+      position: absolute;
+      bottom: 20%;
+      right: 40%;
+      transform: translateX(50%);
+      text-align: left;
+      color: #004800da;
+      z-index: 2;
+      animation: flydOpTekst 1s forwards;
+    }
+  
+    #myButton {
+      position: absolute;
+      right: 50%;
+      bottom: -50px;
+      transform: translateX(-50%);
+      animation: flydIndKnap 1s ease forwards;
+      background-color: #004800;
+      color: #deded8;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      width: 200px;
+      height: 50px;
+      font-size: 16px;
+      padding-top: 10px;
+    }
+  
+    #myButton2 {
+      position: absolute;
+      bottom: -50px;
+      right: 15%;
+      transform: translateX(50%);
+      background-color: #004800da;
+      color: #deded8;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      width: 200px;
+      height: 50px;
+      font-size: 16px;
+      margin-top: -300px; 
+    }
+    
+    
+  }
+  
+  

@@ -1,0 +1,303 @@
+/*tema 2 grundlæggende web*/
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+
+}
+
+h2 {
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: left;
+  padding-top: 1.5%;
+}
+
+.containerstreg {
+  display: flex;
+  justify-content: center;
+}
+
+.streg {
+  width: 1250px;
+  height: 2px;
+  background-color: #004800;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+}
+
+.streg2 {
+  width: 800px;
+  height: 2px;
+  background-color: #004800;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h2 {
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .containerstreg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .streg {
+    width: 1250px;
+    height: 2px;
+    background-color: #004800;
+    margin-bottom: 20px;
+  }
+
+}
+
+.linkport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #004800;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+
+.linkport:hover {
+  color: #0a6a18a1;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .linkport {
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: #004800;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .linkport:hover {
+    color: #328932;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid #0048007a;
+    font-size: 40px;
+  }
+}
+
+.billede-container {
+  text-align: center;
+}
+
+
+.billede-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  width: 60%;
+}
+
+
+.billede-container h2 {
+  text-align: center;
+
+}
+
+.billede-container-2 .mobil {
+  width: auto;
+  height: 800px;
+  margin: 5px;
+}
+
+
+.billede-container-2 .wireframe {
+  width: 500px;
+  height: auto;
+  margin: 5px;
+}
+
+.billede-container-2 {
+
+  display: flex;
+  justify-content: center;
+}
+
+.billede-container-2 h2 {
+  text-align: center;
+
+}
+
+@media (max-width: 768px) {
+
+  .billede-container {
+    text-align: center;
+  }
+
+  .billede-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 60%;
+  }
+
+  .billede-container h2 {
+    text-align: center;
+  }
+
+  .billede-container-2 .mobil {
+    width: auto;
+    height: 500px;
+    margin: 5px;
+  }
+
+  .billede-container-2 .wireframe {
+    width: 300px;
+    height: auto;
+    margin: 5px;
+  }
+
+  .billede-container-2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .billede-container-2 h2 {
+    text-align: center;
+  }
+}
+
+
+
+
+
+/* TEMA 3 GRUNDLÆGGENDE UX */
+.billede-container-3 .tema3 {
+  width: 500px;
+  height: auto;
+  margin: 1px;
+
+
+}
+
+.billede-container-3 {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.billede-container-3 img {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+  height: auto;
+  width: 60%;
+
+}
+
+.billede-container-3 {
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .billede-container-3 .tema3 {
+    width: 500px;
+    height: auto;
+    margin: 1px;
+  }
+
+  .billede-container-3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .billede-container-3 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+    height: auto;
+    width: 60%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*TEMA 4 ANIMATION */
+
+.billede-container-4 {
+
+  height: auto;
+  margin: 1px;
+
+}
+
+.billede-container-4 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.billede-container-4 img {
+  height: auto;
+  width: 30%;
+}
+
+.diagram {
+  max-width: 20%;
+}
+
+@media (max-width: 768px) {
+  .billede-container-4 {
+    width: 500px;
+    height: auto;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .billede-container-4 img {
+    height: auto;
+    width: 30%;
+  }
+
+  .diagram {
+    max-width: 20%;
+  }
+}

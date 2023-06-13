@@ -1,0 +1,215 @@
+/*imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+#forside {
+  background-color: #deded8;
+}
+
+.billedcontainer {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.billede {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  width: auto;
+  max-height: 60%;
+
+}
+
+
+
+
+
+.billede-hojre {
+  right: 20%;
+  animation-name: flydIndBilledeHojre;
+  width: auto;
+  max-height: 40%;
+
+
+}
+
+.billede-venstre {
+  left: -20%;
+  animation-name: flydIndBilledeVenstre;
+  width: auto;
+  max-height: 70%;
+  filter: opacity(80%);
+
+}
+
+
+.tekst {
+  position: absolute;
+  bottom: -100%;
+  /* Startposition uden for skærmen */
+  right: 37%;
+  transform: translateX(50%);
+  text-align: left;
+  color: #004800da;
+  z-index: 2;
+  animation: flydOpTekst 1s forwards;
+  
+
+
+}
+
+.mmd {
+  font-size: 25px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+h1 {
+  font-family: 'Rozha One', serif;
+  margin-top: 1px;
+}
+
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#myButton {
+  position: absolute;
+
+  right: 26.5%;
+  transform: translateX(-50%);
+  animation: flydIndKnap 1s ease forwards;
+  background-color: #004800;
+  color: #deded8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  width: 250px;
+  height: 40px;
+}
+
+#myButton:hover {
+  background-color: #074707;
+  color: #000000;
+  visibility: hidden;
+
+}
+
+
+
+
+#myButton:hover::before {
+  content: "KLIK HER ";
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px #024702;
+
+}
+
+
+@keyframes flydIndBilledeHojre {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 30%;
+  }
+}
+
+@keyframes flydIndBilledeVenstre {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 21%;
+  }
+}
+
+@keyframes flydOpTekst {
+  0% {
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: 35%;
+  }
+}
+
+@keyframes flydIndKnap {
+  0% {
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: 27%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .billede {
+    max-height: 40%;
+  }
+
+  .billede-hojre {
+    max-height: 12%;
+    padding-top: 10%
+  }
+
+  .billede-venstre {
+    max-height: 50%;
+    left: 10%;
+  }
+
+  .tekst {
+    bottom: 20%;
+    right: 24%;
+  }
+
+  #myButton {
+    right: 29%;
+    transform: translateX(50%);
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
